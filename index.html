@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>RSS Wrangler Chrome Extension</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Official policy documents for the RSS Wrangler browser extension." />
+  <link rel="icon" type="image/x-icon" href="favicon.ico" />
+  <script src="canonical-handler.js"></script>
+  <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "WebSite",
+        "name": "RSS Wrangler Extension",
+        "url": "https://chisc.github.io/rss-wrangler/",
+        "description": "Official policy documents for the RSS Wrangler browser extension. Find our Privacy Policy and Terms of Service.",
+        "publisher": {
+          "@type": "Organization",
+          "name": "RSS Wrangler Extension",
+          "url": "https://chisc.github.io/rss-wrangler/",
+          "logo": {
+            "@type": "ImageObject",
+            "url": "https://chisc.github.io/rss-wrangler/icon128.png"
+          }
+        }
+      }
+    </script>
+  <style>
+    body {
+      font-family: "Segoe UI", Arial, sans-serif;
+      background: #181c20;
+      color: #f7f7f7;
+      margin: 0;
+      padding: 0;
+    }
+    .container {
+      max-width: 700px;
+      margin: 60px auto 0 auto;
+      background: #23272c;
+      border-radius: 12px;
+      box-shadow: 0 4px 24px rgba(33, 150, 243, 0.07);
+      padding: 40px 30px 30px 30px;
+    }
+    h1 {
+      color: #64b5f6;
+      margin-top: 0;
+      font-size: 2.2em;
+      letter-spacing: 1px;
+      text-align: center;
+    }
+    p {
+      font-size: 1.15em;
+      margin-bottom: 2em;
+    }
+    .intro-text {
+      text-align: center;
+    }
+    .links {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      gap: 18px;
+      margin-bottom: 2em;
+    }
+    .links a {
+      display: inline-block;
+      background: #1565c0;
+      color: #fff;
+      text-decoration: none;
+      font-weight: 500;
+      padding: 14px 28px;
+      border-radius: 6px;
+      font-size: 1.1em;
+      box-shadow: 0 2px 8px rgba(33, 150, 243, 0.07);
+      transition: background 0.2s, box-shadow 0.2s;
+      min-width: 160px;
+      text-align: center;
+    }
+    .divider {
+      border: none;
+      height: 1px;
+      background-color: #3a3a3c;
+      margin: 40px 0;
+    }
+    .api-pricing-container {
+      display: flex;
+      background: #1c2024;
+      border-radius: 12px;
+      border: 1px solid #3a3a3c;
+      overflow: hidden;
+    }
+    .api-pricing-features {
+      flex: 1;
+      padding: 28px;
+    }
+    .api-pricing-features h3 {
+      color: #90caf9;
+      margin-top: 0;
+      margin-bottom: 8px;
+      font-size: 1.8em;
+    }
+    .api-pricing-features .pricing-subtitle {
+      font-size: 1.1em;
+      color: #aaa;
+      margin-top: 0;
+      margin-bottom: 24px;
+    }
+    .api-pricing-features .feature-list {
+      list-style: none;
+      padding: 0;
+      margin: 24px 0 0 0;
+    }
+    .api-pricing-features .feature-list li {
+      margin-bottom: 12px;
+      font-size: 1.1em;
+      padding-left: 20px;
+      position: relative;
+    }
+    .api-pricing-features .feature-list li::before {
+      content: '•';
+      color: #64b5f6;
+      position: absolute;
+      left: 0;
+      font-size: 1.2em;
+    }
+    .api-pricing-action {
+      background: #23272c;
+      padding: 28px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      min-width: 200px;
+      text-align: center;
+    }
+    .api-pricing-action .price-tag {
+      font-size: 1.8em;
+      font-weight: 600;
+      color: #f7f7f7;
+    }
+    .api-pricing-action .price-description {
+      color: #aaa;
+      margin: 4px 0 20px 0;
+      font-size: 1em;
+    }
+    .api-pricing-action .cta-button {
+      background: #1565c0;
+      color: #fff;
+      text-decoration: none;
+      font-weight: 600;
+      padding: 12px 24px;
+      border-radius: 6px;
+      font-size: 1.1em;
+      transition: background 0.2s;
+    }
+    .cta-button:hover {
+      background: #2196f3;
+      color: #fff;
+    }
+    .links a:hover {
+      background: #2196f3;
+      box-shadow: 0 4px 16px rgba(33, 150, 243, 0.13);
+    }
+    .footer {
+      font-size: 0.97em;
+      color: #aaa;
+      border-top: 1px solid #333;
+      padding-top: 1.5em;
+      margin-top: 2.5em;
+      text-align: center;
+    }
+    a {
+      color: #90caf9;
+    }
+    a:hover {
+      color: #fff;
+    }
+    .chrome-store-btn {
+      display: inline-flex;
+      align-items: center;
+      background: #fff;
+      color: #222;
+      text-decoration: none;
+      font-weight: 600;
+      padding: 8px 20px;
+      border-radius: 6px;
+      font-size: 1.08em;
+      box-shadow: 0 2px 8px rgba(33, 150, 243, 0.07);
+      border: 1px solid #e0e0e0;
+      transition: background 0.2s, box-shadow 0.2s, transform 0.18s cubic-bezier(0.4, 1.4, 0.6, 1), color 0.2s;
+      min-width: 200px;
+      justify-content: center;
+      gap: 8px;
+      margin-top: 10px;
+    }
+    .chrome-store-btn:hover {
+      background: #f5f5f5;
+      color: #222;
+      box-shadow: 0 6px 20px rgba(33, 150, 243, 0.18);
+      transform: translateY(-2px) scale(1.035);
+    }
+    .chrome-store-icon {
+      width: 26px;
+      height: 20px;
+      display: inline-block;
+    }
+    @media (max-width: 600px) {
+      .container {
+        padding: 20px 8px 18px 8px;
+      }
+      h1 {
+        font-size: 1.4em;
+      }
+      .links a {
+        font-size: 1em;
+        padding: 12px 10px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>RSS Wrangler Chrome Extension</h1>
+    <p class="intro-text">
+      Welcome to the official website for <strong>RSS Wrangler</strong>, an extension built for Google Chrome and other Chromium-based browsers.<br />
+      Here you can find our Privacy Policy and Terms of Service.
+    </p>
+    <div class="links">
+      <a href="privacy-policy.html">Privacy Policy</a>
+      <a href="terms-of-service.html">Terms of Service</a>
+    </div>
+    <div class="commentsy-comments-container" style="text-align: center">
+      <a href="https://www.google.com" target="_blank" rel="noopener noreferrer" class="chrome-store-btn">
+        <svg width="22" height="22" viewBox="0 0 192 192" style="vertical-align: middle; margin-right: 8px" xmlns="http://www.w3.org/2000/svg">
+          <circle cx="96" cy="96" r="96" fill="#fff" />
+          <path d="M96 96L45 39.3A96 96 0 0 1 96 24a96 96 0 0 1 80.3 43.7L96 96z" fill="#EA4335" />
+          <path d="M96 96l80.3-28.3A96 96 0 0 1 96 168L96 96z" fill="#FBBC04" />
+          <path d="M96 96v72A96 96 0 0 1 45 39.3L96 96z" fill="#34A853" />
+          <circle cx="96" cy="96" r="32" fill="#4285F4" />
+        </svg>
+        <span style="font-weight: 600; font-size: 1.08em; vertical-align: middle">Chrome Web Store</span>
+      </a>
+    </div>
+    <hr class="divider" />
+    <div class="api-pricing-container">
+      <div class="api-pricing-features">
+        <h3>Go Premium</h3>
+        <p class="pricing-subtitle">Unlock powerful features with a one-time purchase.</p>
+        <ul class="feature-list">
+          <li>Sort your feeds by name or popularity</li>
+          <li>Get notifications for articles matching your keywords</li>
+          <li>Set custom background refresh intervals</li>
+          <li>Use a custom proxy for all feed requests</li>
+          <li>Receive email support or our community</li>
+        </ul>
+      </div>
+      <div class="api-pricing-action">
+        <div class="price-tag">$25</div>
+        <p class="price-description">One-Time Purchase</p>
+        <a href="https://www.paypal.com/ncp/payment/FZ7H36KDKYSZ2" target="_blank" rel="noopener noreferrer" class="cta-button">Get Premium</a>
+      </div>
+    </div>
+    <div class="footer">
+      &copy; <span id="year"></span> RSS Wrangler Extension. The RSS Wrangler software is proprietary and not open source.
+    </div>
+  </div>
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
