@@ -1,13 +1,13 @@
 # RSS Wrangler: An RSS Feed Reader for Chrome
 
-RSS Wrangler is a Chrome extension that allows you to subscribe to, manage, and read your favorite RSS feeds directly in your browser.
+RSS Wrangler is a Chrome extension that allows you to subscribe to manage and read your favorite RSS feeds directly in your browser.
 
 ## Key Features
 
-- **Add & Manage Feeds**: Easily add new RSS/Atom feeds and manage your subscription list.
-- **Offline Caching**: Articles are cached locally, allowing you to read them even when you're offline.
+- **Add and Manage Feeds**: Easily add new RSS/Atom feeds and manage your subscription list.
+- **Offline Caching**: Articles are cached locally, allowing you to read them even when you are offline.
 - **Favorites**: Save your favorite articles to read later.
-- **Customization**: Sort feeds, enable/disable background refresh, and more.
+- **Customization**: Sort feeds, enable/disable background refresh and more.
 - **Dark Mode Support**: Compatible with both light and dark browsing experiences
 
 ## Installation
@@ -27,7 +27,7 @@ RSS Wrangler is a Chrome extension that allows you to subscribe to, manage, and 
 
 ## Privacy
 
-RSS Wrangler operates entirely within your browser and doesn't:
+RSS Wrangler operates entirely within your browser and does not:
 - Collect personal information
 - Track your browsing history
 - Send data to remote servers
