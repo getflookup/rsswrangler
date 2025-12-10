@@ -13,7 +13,7 @@ RSS Wrangler is a Chrome extension that allows you to subscribe to manage and re
 ## Installation
 
 ### From Chrome Web Store:
-1. Visit the <a href="#" target="_blank" rel="noopener">RSS Wrangler Chrome Web Store page</a>
+1. Visit the <a href="https://chromewebstore.google.com/detail/rss-wrangler/fonchabigoommhamfghfbfdpihbbfmjb" target="_blank" rel="noopener">RSS Wrangler Chrome Web Store page</a>
 2. Click "Add to Chrome" to install the extension
 
 ## Usage
